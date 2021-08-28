@@ -1,0 +1,55 @@
+body{
+    background: url("../images/bkg.png");
+    padding: 20px;
+}
+
+.header{
+    padding:  20px;
+    text-align:center;
+}
+
+#logo{
+    height:200px;
+}
+
+h2{
+color: rgb(242,223,5);
+ text-align: center;
+ text-transform: uppercase;
+}
+
+h1,p{
+  color:whitesmoke;
+  text-align: center;
+}
+
+a{
+    color: red;
+    padding-bottom: 15px;
+    font-weight:bold;
+}
+
+#films{
+    text-transform: uppercase;
+}
+
+.info-container{
+    background-color: rgba(0,0,0,0.8);
+    border: thick whitesmoke solid;
+    border-radius: 10px;
+    min-height:200px;
+    height: auto;
+    width: 500px;
+    margin: auto;
+}
+
+button{
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height:60px;
+    width: 200px;
+    font-weight:800;
+}

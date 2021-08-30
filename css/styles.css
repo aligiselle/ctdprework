@@ -1,3 +1,8 @@
+/*
+AUTHOR: ALISHA JAMES
+DESCRIPTION: CODE THE DREAM PRE COURSEWORK
+PROJECT NAME: STAR WARS API DEMO
+*/
 body{
     background: url("../images/bkg.png");
     padding: 20px;
@@ -12,6 +17,68 @@ body{
     height:200px;
 }
 
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px red solid;
+  border-right: none;
+  border-left: none;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-left: thin red solid;
+  width: 150px;
+}
+
+/* Change color on hover */
+.active, .topnav a:hover {
+  background-color: firebrick;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+  
+  #logo{
+    width: -webkit-fill-available;
+  }
+}
+
+
 h2{
 color: rgb(242,223,5);
  text-align: center;
@@ -25,31 +92,42 @@ h1,p{
 
 a{
     color: red;
-    padding-bottom: 15px;
     font-weight:bold;
 }
 
 #films{
     text-transform: uppercase;
+    line-height:1.4;
+    cursor: pointer;
 }
 
+#openingCrawl, #characters{
+    text-align: justify;
+    padding: 15px;
+}
+
+#characters{
+    text-align: justify;
+    cursor: pointer;
+}
 .info-container{
     background-color: rgba(0,0,0,0.8);
     border: thick whitesmoke solid;
     border-radius: 10px;
     min-height:200px;
     height: auto;
-    width: 500px;
+    width: 80%;
     margin: auto;
 }
 
 button{
     margin-top: 50px;
     position: absolute;
-    left: 50%;
+    left: 51%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     height:60px;
     width: 200px;
     font-weight:800;
+    margin-bottom: 50px;
 }

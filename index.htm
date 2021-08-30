@@ -1,18 +1,38 @@
+<!-----------------------------------------
+AUTHOR: ALISHA JAMES
+DESCRIPTION: CODE THE DREAM PRE COURSEWORK
+PROJECT NAME: STAR WARS API DEMO
+------------------------------------------>
 <!DOCTYPE html>
 <html>
-<head>
-<link />
-<link rel="stylesheet" href="css/styles.css">
-<title>STAR WARS - PEOPLE DEMO</title>
-</head>
+    <head>
+        <link />
+        <link rel="stylesheet" href="css/styles.css">
+        <title>STAR WARS API DEMO - CHARACTERS</title>
+    </head>
+
 <body>
+<div class="row">
 
-<div class="header">
-<img id="logo" src="images/logo.png" alt="Star Wars" />
-</div>
+<div class="column side"></div> <!-- End of Column Side -->
 
-<h1>STAR WARS API DEMO</h1>
-<h2>CHARACTER INFO</h2>
+
+<div class=" column middle">
+    
+    <div class="header">
+    <img id="logo" src="images/logo.png" alt="Star Wars" />
+    </div>
+
+    <h1>STAR WARS API DEMO</h1>
+
+
+
+    <div class="topnav">
+      <a href="films.htm">FILMS</a>
+      <a class="active" href="index.htm">CHARACTERS</a>
+    </div> <!-- End of Navigation -->
+    
+    <h2>STAR WARS CHARACTER INFO</h2>
 <div class="info-container">
     <h2 id="name"></h2>
     <p id="height"></p>
@@ -20,9 +40,30 @@
     <p id="birthYear"></p>
     <p id="films"></p>
 </div>
-<button type="button" id="button" name="button">PEOPLE SEARCH</button>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/app.js"></script>
+
+<button type="button" id="button" name="button" onclick="updateInfo();">PEOPLE SEARCH</button>
+
+    <br><br><br><br><br>
+   
+    
+<div class="column side" style="float:right">    
+    <div class="info-container">
+    <h2 id="title"></h2>
+        <p id="director"></p>
+        <p id="producer"></p>
+        <p id="releaseDate"></p>
+    </div>
+</div>    
+</div> <!-- End of Column Middle-->
+ <script src="js/app.js"></script>
+
+<div class="column side"></div>
+
+</div> <!-- End of Row -->
+
+
+
+
 
 </body>
 </html>
